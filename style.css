@@ -77,6 +77,10 @@ body {
 .navbar-left .btn {
 	box-shadow: none;
 }
+/* jumbotron */
+.jumbotron {
+	margin-top: 50px;
+}
 /* Produk */
 .produk-image {
 	height: 110px;
@@ -85,6 +89,9 @@ body {
 }
 .produk-image h6 {
 	cursor: pointer;
+}
+.produk a:hover {
+	text-decoration: none;
 }
 @media screen and (max-width: 400px){
 	.produk-image {
@@ -112,10 +119,19 @@ body {
 }
 
 /* Navbar Bottom */
+.navbar-fixed-bottom {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
 .navbar-fixed-bottom a {
 	text-decoration: none;
+	font-size: 14px;
 }
-.navbar-fixed-bottom a:focus {
+.navbar-fixed-bottom p {
+	font-size: 12px;
+}
+.navbar-fixed-bottom a:focus,
+.navbar-fixed-bottom a:hover {
 	color: inherit;
 }
 .border-top-purple {
