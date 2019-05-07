@@ -23,7 +23,7 @@
 	src: url('assets/font/Poppins/Poppins-Bold.ttf');
 }
 body {
-	font-family: 'Poopons',sans-serif;
+	font-family: 'Poopins',sans-serif;
 	font-size: 14px;
 }
 
@@ -109,4 +109,15 @@ body {
 }
 .footer .btn {
 	box-shadow: none;
+}
+
+/* Navbar Bottom */
+.navbar-fixed-bottom a {
+	text-decoration: none;
+}
+.navbar-fixed-bottom a:focus {
+	color: inherit;
+}
+.border-top-purple {
+	border-top: 2px solid rgba(86,61,124, 0.3);
 }
