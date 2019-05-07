@@ -78,7 +78,8 @@ body {
 	box-shadow: none;
 }
 /* jumbotron */
-.jumbotron {
+.jumbotron,
+.batas-top {
 	margin-top: 50px;
 }
 /* Produk */
@@ -136,4 +137,12 @@ body {
 }
 .border-top-purple {
 	border-top: 2px solid rgba(86,61,124, 0.3);
+}
+
+/* Page Cetak ZonaPrint */
+.form-control {
+	font-size: inherit;
+}
+.batas-bawah {
+	margin-bottom: 55px;
 }
