@@ -36,9 +36,9 @@
                 <textarea class="form-control" ng-model="message" id="inputMessage" placeholder="Pesan Anda"></textarea>
             </div>
             <div class="form-group">
-                <label for="inputFile"><small>Untuk File atau dokuman yang akan dicetak Silahkan Sertakan Setelah Melakukan Konfirmasi Melalui Whatsapp. Tekan Cetak Untuk Melanjutkan.</small></label>
+                <label for="inputFile"><small>Untuk File atau dokuman yang akan dicetak, solahkan Lampirkan Setelah melakukan konfirmasi melalui whatsapp. Untuk melanjutkan tekan cetak!.</small></label>
             </div>
-            <a ng-show="cetakForm.$valid" href="https://wa.me/6281392939580?text=Order ZonaPrint%0ANama%3A%20{{ nama }}%0AEmail%3A%20{{ email }}%0AAlamat%3A%20{{ alamat }}%0ANotlp%3A%20{{ notelp }}%0AMessage%3A%20{{ message }}%0AFile/Dokumen%3A%20Lampirkan" target="blank" ng-click="kirim()" class="btn btn-primary">Cetak</a>
+            <a href="https://wa.me/6281392939580?text=Order ZonaPrint%0ANama%3A%20{{ nama }}%0AEmail%3A%20{{ email }}%0AAlamat%3A%20{{ alamat }}%0ANotlp%3A%20{{ notelp }}%0AMessage%3A%20{{ message }}%0AFile/Dokumen%3A%20Lampirkan"  target="blank" ng-show="cetakForm.$valid" class="btn btn-info">Cetak</a>
         </form>
     </div>
 </div>

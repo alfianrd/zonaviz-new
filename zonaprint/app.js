@@ -32,11 +32,6 @@ app.controller('ctrlZonaprint', function($scope) {
 
 app.controller('ctrlcetak', function($scope) {
 	$scope.title = "ZonaPrint";
-	$scope.nama = '';
-	$scope.email = '';
-	$scope.alamat = '';
-	$scope.notelp = '';
-	$scope.message = '';
 
 });
 
