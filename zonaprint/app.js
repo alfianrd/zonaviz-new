@@ -36,6 +36,7 @@ app.controller('ctrlcetak', function($scope) {
 	$scope.email = '';
 	$scope.alamat = '';
 	$scope.notelp = '';
+	$scope.message = '';
 
 });
 
