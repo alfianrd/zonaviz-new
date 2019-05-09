@@ -16,6 +16,10 @@ app.config(function($routeProvider, $locationProvider) {
 		templateUrl: "page/order.html",
 		controller: "ctrlorder"
 	})
+	.when("/akun", {
+		templateUrl: "page/akun.html",
+		controller: 'ctrlakun'
+	})
 	.otherwise({
 		templateUrl: 'page/404.html'
 	});
@@ -28,9 +32,18 @@ app.controller('ctrlZonaprint', function($scope) {
 
 app.controller('ctrlcetak', function($scope) {
 	$scope.title = "ZonaPrint";
+	$scope.nama = '';
+	$scope.email = '';
+	$scope.alamat = '';
+	$scope.notelp = '';
+
 });
 
 app.controller('ctrlorder', function($scope) {
 	$scope.title = "ZonaPrint";
 });
+
+app.controller('ctrlakun', function($scope) {
+	$scope.title = "ZonaPrint";
+})
 // End Controller

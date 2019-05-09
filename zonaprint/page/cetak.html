@@ -1,7 +1,7 @@
 <!-- Navbar -->
 <nav class="navbar navbar-fixed-top fixed-top navbar-purple bg-purple">
     <div class="d-flex justify-content-between align-items-center">
-        <button class="btn p-0 pt-1"><i class="fa fa-bars text-warning fs-25" id="open-navbar-left"></i></button>
+        <a href="../" class="btn p-0 pt-1"><i class="fa fa-chevron-left text-warning fs-25" id="open-navbar-left"></i></a>
         <a class="navbar-logo h4 mb-0 ml-3" href="#">{{ title }}</a>
     </div>
     <button class="btn btn-sm rounded-20 btn-warning text-white bold" id="btn-open-app">Open In App</button>
@@ -17,24 +17,24 @@
         <form>
             <div class="form-group">
                 <label for="inputFullName">Nama Lengkap</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="John Mania" required="">
+                <input type="text" class="form-control" ng-model="nama" id="inputAddress" placeholder="John Mania" required="">
             </div>
             <div class="form-group">
                 <label for="inputEmail4">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required="">
+                <input type="email" class="form-control" ng-model="email" id="inputEmail4" placeholder="Email" required="">
             </div>
             <div class="form-group">
                 <label for="inputAddress">Alamat</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="Jl. Kenangan Indah" required="">
+                <input type="text" class="form-control" ng-model="alamat" id="inputAddress" placeholder="Jl. Kenangan Indah" required="">
             </div>
             <div class="form-group">
                 <label for="inputPhone">Nomor Telpon</label>
-                <input type="text" class="form-control" id="inputPhone" placeholder="+62" required="">
+                <input type="text" class="form-control" ng-model="notelp" id="inputPhone" placeholder="+62" required="">
             </div>
             <div class="form-group">
                 <label for="inputFile"><small>Untuk File atau dokuman yang akan dicetak Silahkan Sertakan Setelah Melakukan Konfirmasi Melalui Whatsapp. Tekan Cetak Untuk Melanjutkan.</small></label>
             </div>
-            <button type="submit" class="btn btn-primary">Cetak</button>
+            <button type="submit" ng-click="kirim()" class="btn btn-primary">Cetak</button>
         </form>
     </div>
 </div>
@@ -42,22 +42,28 @@
 <!-- Navbar Bottom -->
 <nav class="navbar navbar-fixed-bottom fixed-bottom bg-white navbar-light border-top-purple">
     <div class="col-sm-12 p-0 d-flex justify-content-between align-items-center">
-        <div class="col-4 p-0 text-center ">
-            <a href="#" class="text-muted">
+        <div class="col-3 p-0 text-center ">
+            <a href="#" class="text-purple">
                 <i class="fa fa-home fs-20"></i>
                 <p class="mb-0 mt-0">Home</p>
             </a>
         </div>
-        <div class="col-4 p-0 text-center">
-            <a href="#cetak" class="text-purple">
+        <div class="col-3 p-0 text-center">
+            <a href="#cetak" class="text-muted">
                 <i class="fa fa-print fs-20"></i>
                 <p class="mb-0 mt-0">Cetak</p>
             </a>
         </div>
-        <div class="col-4 p-0 text-center">
+        <div class="col-3 p-0 text-center">
             <a href="#order" class="text-muted">
                 <i class="fa fa-bar-chart fs-20"></i>
                 <p class="mb-0 mt-0">Order</p>
+            </a>
+        </div>
+        <div class="col-3 p-0 text-center">
+            <a href="#akun" class="text-muted">
+                <i class="fa fa-user-o fs-20"></i>
+                <p class="mb-0 mt-0">Akun</p>
             </a>
         </div>
     </div>
