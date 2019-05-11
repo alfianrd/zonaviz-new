@@ -4,19 +4,19 @@
         <div class="row">
             <div class="col-md-4 mt-2 mb-1" ng-repeat="list in menu">
                 <div class="w-100 card p-1">
-                    <div class="row">
-                        <div class="col ">
+                    <div class="d-flex">
+                        <div class="col p-0">
                             <div class="image">
                                 <img src="{{ list.gambar }}" alt="{{ list.nama }}">
                             </div>
                         </div>
-                        <div class="col detail">
+                        <div class="col detail p-0">
                             <div class="title">
-                                <label class="bold">{{list.nama}}</label>
+                                <label class="bold mb-1">{{list.nama}}</label>
                             </div>
                             <div class="harga ">
                                 <span>{{list.harga | rupiah}}</span>
-                                <div class="pesan mt-2">
+                                <div class="pesan mt-1">
                                     <button class="btn btn-sm btn-warning text-white" id="btnPesan" ng-click="logToConsole($index)"><i class="fa fa-shopping-cart"></i> Pesan</button>
                                 </div>
                             </div>
