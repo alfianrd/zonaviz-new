@@ -105,9 +105,6 @@ app.config(function($routeProvider, $locationProvider) {
 	.when("/akun", {
 		templateUrl: "page/akun.html",
 		controller: 'ctrlAkun'
-	})
-	.otherwise({
-		templateUrl: 'page/404.html'
 	});
 });
 // End Config
@@ -134,7 +131,7 @@ app.controller('ctrlFood', function($scope) {
 			gambar: 'img/IMG-20190510-WA0010.jpg'
 		},
 		{
-			nama: 'Soto Sokaraje', 
+			nama: 'Soto Sokaraja', 
 			harga: 20000, 
 			ongkir: 2000,
 			gambar: 'img/IMG-20190510-WA0011.jpg'
@@ -163,7 +160,7 @@ app.controller('ctrlFood', function($scope) {
 			harga: 10000, 
 			ongkir: 2000,
 			gambar: 'img/IMG-20190510-WA0015.jpg'
-		},
+		}
 	];
 	$scope.cart = [];
 	$scope.logToConsole = function(index) {
