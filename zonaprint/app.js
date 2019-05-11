@@ -1,5 +1,7 @@
 var app = angular.module('App',['ngRoute']);
-
+app.component('navbar', function() {
+	
+});
 // Config 
 app.config(function($routeProvider, $locationProvider) {
 	$locationProvider.hashPrefix('');

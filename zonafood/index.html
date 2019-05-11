@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8>
+    <link rel="icon" href="image/zonavizlogo.ico">
+    <meta name=description content="Lakukan semua aktifitas dengan mudah dalam satu aplikasi">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>zonaviz</title>
+    <link rel="stylesheet" href="../assets/bootstrap-4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Angular JS -->
+    <script src="../angular.min.js"></script>
+    <script src="../angular-route.min.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body ng-app="App">
+    <navbar-top ng-controller="ctrlFood"></navbar-top>
+    <div class="batas-top"></div>
+    <ng-view>
+    
+    
+   
+    </ng-view>
+    <div class="batas-bawah"></div>
+    <navbar-bottom></navbar-bottom>
+    <script src="../assets/jquery/dist/jquery.min.js"></script>
+    <script src="../assets/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
