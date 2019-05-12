@@ -59,6 +59,7 @@ body {
 .relative {
 	position: relative;
 }
+
 /* Navbar Left */
 .navbar-left {
 	position: fixed;
@@ -125,17 +126,22 @@ body {
 .navbar-fixed-bottom {
 	padding-top: 5px;
 	padding-bottom: 5px;
+
+}
+.navbar-fixed-bottom .active {
+	color: #563D7C;
 }
 .navbar-fixed-bottom a {
 	text-decoration: none;
 	font-size: 14px;
+	color: #6c757d;
 }
 .navbar-fixed-bottom p {
 	font-size: 12px;
 }
 .navbar-fixed-bottom a:focus,
 .navbar-fixed-bottom a:hover {
-	color: inherit;
+	color: #563D7C;
 }
 .border-top-purple {
 	border-top: 2px solid rgba(86,61,124, 0.3);
@@ -164,3 +170,4 @@ body {
 	width: 100%;
 	height: 100%;
 }
+ 

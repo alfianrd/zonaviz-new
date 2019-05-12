@@ -2,7 +2,7 @@
 <div class="menu pt-2 pb-2 ">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-4 mt-2 mb-1" ng-repeat="list in menu">
+            <div class="col-md-4 mt-2 mb-1" id="item" ng-repeat="list in menu">
                 <div class="w-100 card p-1">
                     <div class="d-flex">
                         <div class="col p-0">
@@ -14,10 +14,10 @@
                             <div class="title">
                                 <label class="bold mb-1">{{list.nama}}</label>
                             </div>
-                            <div class="harga ">
-                                <span>{{list.harga | rupiah}}</span>
+                            <div class="harga">
+                                <span class="bold text-purple">{{list.harga | rupiah}}</span>
                                 <div class="pesan mt-1">
-                                    <button class="btn btn-sm btn-warning text-white" id="btnPesan" ng-click="logToConsole($index)"><i class="fa fa-shopping-cart"></i> Pesan</button>
+                                    <a class="btn btn-sm btn-warning text-white" id="btnPesan" href="#pesan/{{list.id}}"><i class="fa fa-shopping-cart"></i> Pesan</a>
                                 </div>
                             </div>
                         </div>
