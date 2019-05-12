@@ -6,11 +6,11 @@
                     <img src="{{ list.gambar }}" width="100%" height="auto" alt="">
                 </div>
                 <div class="detail p-3">
-                    <h5 class="bold">{{ list.nama }}</h5>
+                    <label class="bold">{{ list.nama }}</label>
                     <hr>
-                    <h6 class="bold">Harga: <br><span class="">{{ list.harga | rupiah }}</span></h6>
+                    <label class="bold">Harga: <br><span class="">{{ list.harga | rupiah }}</span></label>
                     <hr>
-                    <h6 class="bold">Ongkir: <br><span class="">{{ list.ongkir | rupiah }}</span></h6>
+                    <label class="bold">Ongkir: <br><span class="">{{ list.ongkir | rupiah }}</span></label>
                     <hr>
                     <div class="d-flex text-center align-items-center">
                         <div class="col">
@@ -29,7 +29,7 @@
                         </div>
                     </div>
                     <hr>
-                    <h6 class="bold">Total: <br><span class="">{{ (list.harga * jumlah) + list.ongkir | rupiah }}</span></h6>
+                    <label class="bold">Total: <br><span class="">{{ (list.harga * jumlah) + list.ongkir | rupiah }}</span></label>
                 </div>
             </div>
         </div>
