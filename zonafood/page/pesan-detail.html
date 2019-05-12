@@ -6,30 +6,29 @@
                     <img src="{{ list.gambar }}" width="100%" height="auto" alt="">
                 </div>
                 <div class="detail p-3">
-                    <label class="bold">{{ list.nama }}</label>
+                    <h6 class="bold">{{ list.nama }}</h6>
                     <hr>
-                    <label class="bold">Harga: <br><span class="">{{ list.harga | rupiah }}</span></label>
-                    <hr>
-                    <label class="bold">Ongkir: <br><span class="">{{ list.ongkir | rupiah }}</span></label>
-                    <hr>
-                    <div class="d-flex text-center align-items-center">
-                        <div class="col">
-                        	<div class="form-row">
-                        		<select class="custom-select" ng-model="jumlah">
-                        		  <option selected="" value="1">1</option>
-                        		  <option value="2">2</option>
-                        		  <option value="3">3</option>
-                        		  <option value="5">4</option>
-                        		  <option value="5">5</option>
-                        		</select>
+                    <label class="bold">Harga: <br><span class="">{{ list.harga | rupiah }}</span></label> <br>
+                    <label class="bold">Ongkir: <br><span class="">{{ list.ongkir | rupiah }}</span></label> <br>
+                    <div class="d-flex">
+                        <div class="col p-0">
+                            <div class="form-row">
+                                <select class="custom-select" ng-model="jumlah">
+                                    <option selected="" value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="5">4</option>
+                                    <option value="5">5</option>
+                                </select>
                             </div>
                         </div>
-                        <div class="col">
-                            <a href="" class="btn btn-warning text-white">Add Chart</a>
+                        <div class="col text-right p-0">
+                            <label class="bold">Total: <br><span class="">{{ (list.harga * jumlah) + list.ongkir | rupiah }}</span></label>
                         </div>
                     </div>
-                    <hr>
-                    <label class="bold">Total: <br><span class="">{{ (list.harga * jumlah) + list.ongkir | rupiah }}</span></label>
+                    <div class="text-right">
+                        <a href="" class="btn btn-warning text-white">Add Chart</a>
+                    </div>
                 </div>
             </div>
         </div>
